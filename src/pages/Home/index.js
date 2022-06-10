@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, SafeAreaView, FlatList, TextInput } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, SafeAreaView, FlatList, TextInput, Dimensions } from 'react-native';
 
 import { FadersHorizontal, MagnifyingGlass } from 'phosphor-react-native';
 import ShowcaseItem from '../../components/ShowcaseItem';
@@ -27,10 +27,10 @@ export default function Home() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.searchBar}>
-         <MagnifyingGlass size={32} color='#000000'/>
+         <MagnifyingGlass weitgh='thin' size={32} color='#000000'/>
          <TextInput style={styles.searchInput}/>
       </View>
-
+      <Text style={styles.title}>AK-47</Text>
       <View style={styles.main}>
          <FlatList
             showsVerticalScrollIndicator={false}
@@ -49,16 +49,18 @@ export default function Home() {
   );
 }
 
+const { width, height } = Dimensions.get('window');
+
 const styles = StyleSheet.create({
    container: {
       flex: 1,
       backgroundColor: '#0C0C0C'
    },
    searchBar: {
-      width: 280,
+      width: '80%',
       height: 50,
       backgroundColor: '#202020',
-      borderRadius: '50%',
+      borderRadius: 25,
       padding: 12,
       marginTop: 32,
       marginHorizontal: 40,
@@ -70,8 +72,13 @@ const styles = StyleSheet.create({
       flex: 1,
       marginLeft: 8
    },
+   title:{
+      fontSize: 32,
+      color: '#FFF',
+   },
    main: {
-      flex: 1
+      flex: 1,
+      alignItems: 'center',
    },
    filterButton:{
       height: 50,
