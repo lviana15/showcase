@@ -1,8 +1,12 @@
+import { useNavigation } from '@react-navigation/native';
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 
 export default function ShowcaseItem({ weaponName, skinName }) {
+   const navigation = useNavigation()
+
+
    return (
-      <TouchableOpacity>
+      <TouchableOpacity onPress={ () => navigation.navigate('Detail')}>
          <View style={styles.container}>
             <Text style={styles.title}>
                {weaponName}
