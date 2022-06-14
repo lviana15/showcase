@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
       height: 165,
       width: 165,
       backgroundColor: '#202020',
-      marginTop: 24,
+      marginTop: 18,
       marginHorizontal: 6,
       justifyContent: 'space-around',
       borderRadius: 12,

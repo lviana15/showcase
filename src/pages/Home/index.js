@@ -30,8 +30,8 @@ export default function Home() {
          <MagnifyingGlass weitgh='thin' size={32} color='#000000'/>
          <TextInput style={styles.searchInput}/>
       </View>
-      <Text style={styles.title}>AK-47</Text>
       <View style={styles.main}>
+      <Text style={styles.title}>AK-47</Text>
          <FlatList
             showsVerticalScrollIndicator={false}
             horizontal={false}
@@ -75,6 +75,7 @@ const styles = StyleSheet.create({
    title:{
       fontSize: 32,
       color: '#FFF',
+      marginTop: 12
    },
    main: {
       flex: 1,
