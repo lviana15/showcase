@@ -12,12 +12,19 @@ function Routes() {
          <Stack.Screen
             name='Home'
             component={Home}
-            
+            options={{
+               headerShown: false
+            }}
          />
 
          <Stack.Screen
             name='Detail'
             component={Detail}
+            options={{
+               headerTransparent: true,
+               headerTitle: '',
+               headerTintColor: '#F5B819'
+            }}
          />
       </Stack.Navigator>
    )

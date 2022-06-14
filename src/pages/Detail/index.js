@@ -57,17 +57,18 @@ const styles = StyleSheet.create({
    },
    content: {
       alignItems: 'center',
-      marginTop: 32 
+      marginTop: 12 
    },
    title:{
+      marginLeft: 12,
       fontSize: 24,
       color: '#FFF'
    },
    item: {
-      height: 318,
-      width: 343,
+      height: 285,
+      width: 318,
       backgroundColor: '#202020',
-      marginTop: 28,
+      marginVertical: 18,
       marginHorizontal: 6,
       justifyContent: 'space-around',
       borderRadius: 12
